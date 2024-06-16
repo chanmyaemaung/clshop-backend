@@ -19,5 +19,5 @@ export class User {
   password: string;
 
   @Column(() => RegistryDates, { prefix: false })
-  regisryDates: RegistryDates;
+  registryDates: RegistryDates;
 }
