@@ -5,6 +5,7 @@ import { OrdersModule } from './domain/orders/orders.module';
 import { PaymentsModule } from './domain/payments/payments.module';
 import { UsersModule } from './domain/users/users.module';
 import { EnvModule } from './env/env.module';
+import { CategoriesModule } from './domain/categories/categories.module';
 
 @Module({
   imports: [
@@ -14,6 +15,7 @@ import { EnvModule } from './env/env.module';
     EnvModule,
     OrdersModule,
     PaymentsModule,
+    CategoriesModule,
   ],
   controllers: [],
   providers: [],
