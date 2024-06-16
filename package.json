@@ -20,10 +20,10 @@
     "test:e2e": "jest --config ./test/jest-e2e.json",
     "migration:create": "pnpm typeorm migration:create",
     "premigration:generate": "pnpm build",
-    "migration:generate": "pnpm typeorm migration:generate -d dist/database/data-source -p",
+    "migration:generate": "pnpm typeorm migration:generate -d dist/src/database/data-source -p",
     "premigration:run": "pnpm build",
-    "migration:run": "pnpm typeorm migration:run -d dist/database/data-source",
-    "migration:revert": "pnpm typeorm migration:revert -d dist/database/data-source"
+    "migration:run": "pnpm typeorm migration:run -d dist/src/database/data-source",
+    "migration:revert": "pnpm typeorm migration:revert -d dist/src/database/data-source"
   },
   "dependencies": {
     "@nestjs/common": "^10.0.0",
